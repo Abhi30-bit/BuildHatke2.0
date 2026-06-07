@@ -1,6 +1,6 @@
 const express =require('express');
 const siteManagerModel = require('../Modal/siteManagerModel');
-const SiteManagerReport = require('../Modal/SiteManagerReport');
+const SiteManagerReport = require('../Modal/siteManagerReport');
 const smReportRouter =express.Router();
 smReportRouter.get('/',async(req,res)=>{
    const report = await SiteManagerReport.find().populate('smuid').populate('uid').populate('projectId')
