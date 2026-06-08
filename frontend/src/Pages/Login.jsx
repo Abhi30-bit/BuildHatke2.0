@@ -22,7 +22,7 @@ function Login() {
   const logcode = async (e) => {
     e.preventDefault();
 const user= { email, pass }
-      const res = await axios.post('http://localhost:3000/api/reg/login',user);
+      const res = await axios.post('https://buildhatke2-0.onrender.com/api/reg/login',user);
 
       if (res.data.msg === "success") {
         toast.success("Login success");
