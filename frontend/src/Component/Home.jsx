@@ -21,6 +21,7 @@ import lp5 from "../assets/lp5.svg"
 import cos1 from "../assets/cos1.png"
 import cos2 from "../assets/cos2.png"
 import cos3 from "../assets/cos3.png"
+import banner from "../assets/banner.png";
 import TestimonialCard from './TestimonialCard'
 
 import monitor from '../assets/monitor.png'
@@ -49,7 +50,7 @@ function Home() {
     {/* Bannner  */}
     <div className="row">
         <div className="col-sm-12 p-0" >
-          <img src="/src/assets/banner.png" alt="" className='img-fluid'/>
+          <img src={banner} alt="" className="img-fluid" />
         </div>
       </div>
 
